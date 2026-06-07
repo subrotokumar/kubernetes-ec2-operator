@@ -8,4 +8,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: kubernetes-ec2-operator
 repo: github.com/subrotokumar/kubernetes-ec2-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: subrotokumar.dev
+  group: compute
+  kind: EC2Instance
+  path: github.com/subrotokumar/kubernetes-ec2-operator/api/v1
+  version: v1
 version: "3"
